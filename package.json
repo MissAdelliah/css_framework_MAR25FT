@@ -1,0 +1,27 @@
+{
+  "name": "css_framework_mar25ft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass styles/scss:styles/css --watch",
+    "build": "sass styles/scss:styles/css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MissAdelliah/css_framework_MAR25FT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MissAdelliah/css_framework_MAR25FT/issues"
+  },
+  "homepage": "https://github.com/MissAdelliah/css_framework_MAR25FT#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "sass": "^1.100.0"
+  }
+}
