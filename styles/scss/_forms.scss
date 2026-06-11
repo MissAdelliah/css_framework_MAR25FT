@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+.auth-form-card {
+  max-width: 480px;
+  margin-inline: auto;
+}
+
+.form-control,
+.form-select {
+  border-color: $gray-400;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: $gray-600;
+  box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.15);
+}
+
+.search-panel,
+.create-post-panel {
+  background: #ffffffd5;
+  border-radius: $border-radius;
+  box-shadow: 0 0.5rem 1.5rem rgba(31, 31, 31, 0.06);
+}
+
+.create-post-panel textarea {
+  min-height: 120px;
+}

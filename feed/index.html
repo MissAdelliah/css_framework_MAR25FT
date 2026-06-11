@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed | Comit</title>
+    <link rel="stylesheet" href="/styles/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-white border-bottom">
+        <div class="container">
+          <a class="navbar-brand app-logo" href="/">Comit</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            data-menu-toggle
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/feed/">Feed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile/">Profile</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-section">
+      <section class="container">
+        <div class="mb-4">
+          <h1 class="h2 mb-0">Discover</h1>
+        </div>
+
+        <section class="search-panel mb-4 p-4">
+          <h2 class="h5 mb-3">Find posts</h2>
+
+          <div class="row g-3">
+            <div class="col-12 col-md-8">
+              <label for="searchPosts" class="form-label">Search</label>
+              <input
+                id="searchPosts"
+                name="search"
+                type="search"
+                class="form-control"
+                placeholder="Search Topic, Profile, Repo..."
+              />
+            </div>
+
+            <div class="col-12 col-md-4">
+              <label for="sortPosts" class="form-label">Sort posts</label>
+              <select id="sortPosts" name="sort" class="form-select">
+                <option selected>Newest first</option>
+                <option>Oldest first</option>
+                <option>Most popular</option>
+                <option>Most commented</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-5">
+          <h2 class="h4 mb-3">Top contributors</h2>
+
+          <div class="d-flex align-items-center gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop"
+              class="profile-avatar"
+              alt="Contributor profile image"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=100&auto=format&fit=crop"
+              class="profile-avatar"
+              alt="Contributor profile image"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1528892952291-009c663ce843?q=80&w=100&auto=format&fit=crop"
+              class="profile-avatar"
+              alt="Contributor profile image"
+            />
+            <span class="text-muted small">+5 more</span>
+          </div>
+        </section>
+
+        <div class="row g-5">
+          <div class="col-12 col-lg-8 order-2 order-lg-1">
+            <section>
+              <div class="mb-3">
+                <p class="text-uppercase text-muted small fw-bold mb-1">
+                  All posts
+                </p>
+                <h2 class="h3 mb-0">Latest posts</h2>
+              </div>
+
+              <div class="row g-4">
+                <div class="col-12 col-md-6">
+                  <article class="card app-card h-100">
+                    <img
+                      src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop"
+                      class="card-img-top post-thumbnail"
+                      alt="Laptop with code on screen"
+                    />
+
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-2"
+                      >
+                        <p class="small fw-bold mb-0">@joedev</p>
+                        <p class="small text-muted mb-0">14:25</p>
+                      </div>
+
+                      <h3 class="h5 card-title">New test project</h3>
+                      <p class="card-text text-muted">
+                        This is a post test about improving a front-end layout
+                        with Bootstrap components.
+                      </p>
+
+                      <span class="badge text-bg-light">Bootstrap</span>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <article class="card app-card h-100">
+                    <img
+                      src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
+                      class="card-img-top post-thumbnail"
+                      alt="Code editor on a laptop"
+                    />
+
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-2"
+                      >
+                        <p class="small fw-bold mb-0">@sebdev</p>
+                        <p class="small text-muted mb-0">23:15</p>
+                      </div>
+
+                      <h3 class="h5 card-title">New post from presentation</h3>
+                      <p class="card-text text-muted">
+                        I am testing a clean card layout for social media posts
+                        and checking how it behaves on mobile.
+                      </p>
+
+                      <span class="badge text-bg-light">Responsive</span>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <article class="card app-card h-100">
+                    <img
+                      src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+                      class="card-img-top post-thumbnail"
+                      alt="Workspace with computer"
+                    />
+
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-2"
+                      >
+                        <p class="small fw-bold mb-0">@devmaster</p>
+                        <p class="small text-muted mb-0">Today</p>
+                      </div>
+
+                      <h3 class="h5 card-title">Cleaning up my design</h3>
+                      <p class="card-text text-muted">
+                        I reused the visual direction from my previous project,
+                        but rebuilt this version with Bootstrap and Sass.
+                      </p>
+
+                      <span class="badge text-bg-light">UI</span>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <article class="card app-card h-100">
+                    <img
+                      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+                      class="card-img-top post-thumbnail"
+                      alt="Person working on laptop"
+                    />
+
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-2"
+                      >
+                        <p class="small fw-bold mb-0">@malenedev</p>
+                        <p class="small text-muted mb-0">Yesterday</p>
+                      </div>
+
+                      <h3 class="h5 card-title">Need help with Sass</h3>
+                      <p class="card-text text-muted">
+                        I am learning how partials, variables and Bootstrap
+                        overrides work together in a Sass project.
+                      </p>
+
+                      <span class="badge text-bg-light">Help</span>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <article class="card app-card h-100">
+                    <img
+                      src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop"
+                      class="card-img-top post-thumbnail"
+                      alt="People working together"
+                    />
+
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-2"
+                      >
+                        <p class="small fw-bold mb-0">@devteam</p>
+                        <p class="small text-muted mb-0">This week</p>
+                      </div>
+
+                      <h3 class="h5 card-title">Team workflow tips</h3>
+                      <p class="card-text text-muted">
+                        Good folder structure, clear naming and consistent
+                        components make a project easier to maintain.
+                      </p>
+
+                      <span class="badge text-bg-light">Workflow</span>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <article class="card app-card h-100">
+                    <img
+                      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+                      class="card-img-top post-thumbnail"
+                      alt="Students working together"
+                    />
+
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-2"
+                      >
+                        <p class="small fw-bold mb-0">@fabdev</p>
+                        <p class="small text-muted mb-0">This week</p>
+                      </div>
+
+                      <h3 class="h5 card-title">Responsive testing</h3>
+                      <p class="card-text text-muted">
+                        I tested the layout at mobile, tablet and desktop sizes
+                        to make sure the cards and forms stay readable.
+                      </p>
+
+                      <span class="badge text-bg-light">Testing</span>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="col-12 col-lg-4 order-1 order-lg-2">
+            <aside>
+              <section class="create-post-panel p-4 mb-4">
+                <h2 class="h5 mb-3">Create a post</h2>
+
+                <form>
+                  <div class="mb-3">
+                    <label for="postTitle" class="form-label">Title</label>
+                    <input
+                      id="postTitle"
+                      name="title"
+                      type="text"
+                      class="form-control"
+                      placeholder="Post title"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="postTopic" class="form-label">Topic</label>
+                    <select id="postTopic" name="topic" class="form-select">
+                      <option selected>Front-end</option>
+                      <option>Bootstrap</option>
+                      <option>Sass</option>
+                      <option>JavaScript</option>
+                      <option>Help</option>
+                    </select>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="postImage" class="form-label">Image URL</label>
+                    <input
+                      id="postImage"
+                      name="image"
+                      type="url"
+                      class="form-control"
+                      placeholder="https://example.com/image.jpg"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="postText" class="form-label">Post text</label>
+                    <textarea
+                      id="postText"
+                      name="body"
+                      class="form-control"
+                      placeholder="What do you want to share?"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button class="btn btn-primary w-100" type="submit">
+                    Create post
+                  </button>
+                </form>
+              </section>
+
+              <section class="create-post-panel p-4">
+                <h2 class="h5 mb-3">Filter posts</h2>
+
+                <div class="d-flex flex-wrap gap-2">
+                  <button class="btn btn-primary btn-sm" type="button">
+                    All
+                  </button>
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    Front-end
+                  </button>
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    Sass
+                  </button>
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    Bootstrap
+                  </button>
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    UI
+                  </button>
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    Help
+                  </button>
+                </div>
+              </section>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="mb-1">&copy; 2026 Comit</p>
+        <p class="mb-0">
+          Terms & conditions · Contact · comitsupport@gmail.com
+        </p>
+      </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
