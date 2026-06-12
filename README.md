@@ -48,3 +48,7 @@ npm run build
 -made sure Bootstrap and Sass was updated 
 
 The project uses Bootstrap through npm and does not use Bootstrap CDN links.
+
+## Ai use
+- Text on posts 
+- Debugg / explain warnings
