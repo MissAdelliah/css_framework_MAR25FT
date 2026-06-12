@@ -32,6 +32,8 @@ package.json
 ## Installations
 clone repo
 npm install
+Bootstrap
+Sass
 
 ## Development 
 Run Sass in watch mode:
